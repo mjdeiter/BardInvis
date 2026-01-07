@@ -8,6 +8,9 @@ It provides a **single-button ImGui toggle** that instructs a bard to play
 
 All known bard melody and song-linger edge cases are handled.
 
+<img width="236" height="261" alt="image" src="https://github.com/user-attachments/assets/e9c0cb0c-360e-48c7-b385-444fa593a349" />
+
+
 ---
 
 ## Features

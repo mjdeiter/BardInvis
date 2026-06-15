@@ -1,7 +1,6 @@
 # BardInvis
 
-**BardInvis** is an **EMU-safe group invis controller** for  
-**Project Lazarus EverQuest**, built using **MacroQuest (MQNext)** and **E3**.
+A [MacroQuest](https://www.macroquest.org/) Lua script for the [Project Lazarus](https://www.lazaruseq.com/) EverQuest emulator server.
 
 It provides a **single-button ImGui toggle** that instructs a bard to play  
 **Shauri’s Sonorous Clouding** for group invis and reliably removes it when disabled.

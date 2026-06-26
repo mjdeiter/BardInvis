@@ -5,12 +5,23 @@ Unless otherwise stated, releases are **backward-compatible** and EMU-safe.
 
 ---
 
-## v1.3.7 — UI Polish (Current Stable)
+## v1.4.0 — Button UX Overhaul + Auto-Update Check (Current Stable)
+- Button text now describes the **action it will perform**, not a state label that read backwards
+  - `ENABLE GROUP INVIS` (green) when idle — click to turn on
+  - `DISABLE GROUP INVIS` (red) when active — click to turn off
+  - Previously: `GROUP INVIS (ON)` while idle was confusing (looked like a status, not an action)
+- **Color-coded button**: green = enable, red = disable, grey = transitioning
+- **ENABLING… / DISABLING…** busy states during FSM transitions — button no longer silently freezes on the previous label for ~2 seconds
+- **Auto-update check on startup**: uses `curl.exe` to fetch the latest version from GitHub and prints a teal notice in the MQ window if an update is available (same pattern as ItemPass)
+- No changes to FSM logic, timing, commands, or any other behavior
+
+---
+
+## v1.3.7 — UI Polish
 - Color-coded per-member invis status in the names table  
   - **Green** = Invisible  
   - **Red** = Visible
 - Improves readability with no behavior changes
-- Recommended stable release
 
 ---
 
@@ -38,14 +49,14 @@ Unless otherwise stated, releases are **backward-compatible** and EMU-safe.
 ---
 
 ## v1.3.3 — UI State Persistence
-- Added persistence for the “Show Names” checkbox
+- Added persistence for the "Show Names" checkbox
 - Stored UI state in a dedicated INI file
 - Foundation for production UI behavior
 
 ---
 
 ## v1.3.2 — UI Label Polish
-- Renamed checkbox from “Show Invis Debug” to **“Show Names”**
+- Renamed checkbox from "Show Invis Debug" to **"Show Names"**
 - Improved clarity and user-facing wording
 - No behavior changes
 
@@ -66,7 +77,7 @@ Unless otherwise stated, releases are **backward-compatible** and EMU-safe.
 ---
 
 ## v1.2.2 — Bard Song Linger Fix (Major Stability Release)
-- Explicitly removes **Shauri’s Sonorous Clouding** on OFF
+- Explicitly removes **Shauri's Sonorous Clouding** on OFF
 - Eliminated bard song aura linger issues
 - Deterministic ON / OFF behavior
 - First fully stable functional release

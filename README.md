@@ -3,7 +3,7 @@
 A [MacroQuest](https://www.macroquest.org/) Lua script for the [Project Lazarus](https://www.lazaruseq.com/) EverQuest emulator server.
 
 It provides a **single-button ImGui toggle** that instructs a bard to play  
-**Shauri’s Sonorous Clouding** for group invis and reliably removes it when disabled.
+**Shauri's Sonorous Clouding** for group invis and reliably removes it when disabled.
 
 All known bard melody and song-linger edge cases are handled.
 
@@ -14,8 +14,11 @@ All known bard melody and song-linger edge cases are handled.
 
 ## Features
 
-- One-button **GROUP INVIS ON / OFF** control  
-- Uses bard song **Shauri’s Sonorous Clouding**  
+- One-button **ENABLE / DISABLE GROUP INVIS** control  
+- **Color-coded button** — green to enable, red to disable, grey while busy  
+- **ENABLING… / DISABLING…** transition states so the button never looks stuck  
+- **Auto-update check on startup** — notifies in the MQ window if a newer version is available  
+- Uses bard song **Shauri's Sonorous Clouding**  
 - Explicitly removes bard-song invis on disable (no linger issues)  
 - Live group invis status summary  
 - Optional per-member visibility list  
